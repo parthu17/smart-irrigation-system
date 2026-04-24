@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"content="width=device-width,initial-scale=1.0"/>
+        <title>Smart Irrigation System</title>
+        <link rel="stylesheet"href="cropstyles.css"/>
+        
+    </head>
+    <body>
+        <h1>Smart Irrigation System</h1>
+        <div class="container">
+         
+         <h2>Choose the required crop type:</h2>
+         <div id="option-container">
+          <div class="option">
+            
+            <input type="radio"id="black-soil"name="soil"value="1"checked/>
+            <label for="black-soil">
+                <img src="https://images.unsplash.com/photo-1532045240594-673a03748f67?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="sapling planted in red soil"/>
+ </label>
+         </div>
+         <div class="option">
+            
+            <input type="radio"id="red-soil"name="soil"value="0"/>
+            <label for="red-soil">
+                <img src="https://images.unsplash.com/photo-1609867649708-2c3bd7bb1e3f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="grass field of black soil"/>
+            </label>
+          </div>
+         </div>
+         <p id="weather-info">Loading weather...</p>
+         <button id="connect">Connect Arduino</button>
+         <button type="submit">Submit</button>
+        </div>
+        <script src="cropscript.js"></script>
+
+    </body>
+</html>
