@@ -1,7 +1,6 @@
 int soil = 0;
 int rainpercent = 0;
 int moisture;
-
 bool lastState = false;
 
 void setup() {
