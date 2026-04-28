@@ -2,7 +2,6 @@ let port;
 let writer;
 let rainChance = 50;
 
-// 🔌 CONNECT TO ARDUINO
 document.getElementById("connect").addEventListener("click", async () => {
     try {
         port = await navigator.serial.requestPort();
@@ -10,13 +9,12 @@ document.getElementById("connect").addEventListener("click", async () => {
 
         writer = port.writable.getWriter();
 
-        console.log("✅ Connected to Arduino");
+        console.log("Connected to Arduino");
     } catch (error) {
         console.log("Connection error:", error);
     }
 });
 
-// 🌧️ FETCH WEATHER
 async function getWeather() {
     try {
         const apiKey = "7dd4d6e7ce3adb6c4c77cef20a133a77"; 
@@ -51,7 +49,7 @@ async function getWeather() {
 document.querySelector("button[type='submit']").addEventListener("click", async () => {
     try {
         if (!writer) {
-            alert("⚠️ Connect Arduino first!");
+            alert("Connect Arduino first!");
             return;
         }
 
@@ -61,7 +59,7 @@ document.querySelector("button[type='submit']").addEventListener("click", async 
 
         await writer.write(new TextEncoder().encode(message));
 
-        console.log("📤 Sent:", message);
+        console.log("Sent:", message);
 
     } catch (error) {
         console.log("Send error:", error);
