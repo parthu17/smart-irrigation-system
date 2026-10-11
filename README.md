@@ -58,7 +58,7 @@ Water Pump (ON/OFF)
 
 **Note:** The moisture thresholds must be calibrated for the actual sensor and soil conditions. Rain probability is a forecast, not a guarantee of rainfall.
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 smart-irrigation-system/
