@@ -74,7 +74,7 @@ smart-irrigation-system/
 └── README.md
 ```
 
-## 📸 Project Photos and Videos
+## Project Photos and Videos
 
 Project photos and demonstration videos are available in the [`irrigationSystem_images_video`](./irrigationSystem_images_video/) folder.
 
