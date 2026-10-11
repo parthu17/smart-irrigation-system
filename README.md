@@ -78,23 +78,11 @@ smart-irrigation-system/
 
 Project photos and demonstration videos are available in the [`irrigationSystem_images_video`](./irrigationSystem_images_video/) folder.
 
-The media documents the hardware setup and the system's testing process.
-
-To display a particular photo directly in this README, use its exact filename:
-
-```markdown
-![Smart Irrigation System](./irrigationSystem_images_video/your-image-filename.jpg)
+The media documents the hardware setup and the system's testing process.The images are provided in .jpeg format while the video is provided
+using a drive link.
 ```
 
-To link a specific video:
-
-```markdown
-[Watch the project demonstration](./irrigationSystem_images_video/your-video-filename.mp4)
-```
-
-Replace the example filenames with the actual filenames in the repository.
-
-## 🚀 Running the Project
+## Running the Project
 
 ### 1. Upload the Arduino Code
 
@@ -118,7 +106,7 @@ The website uses the OpenWeatherMap API to retrieve forecast data. Configure a v
 
 **Security:** Do not publish personal API keys in a public repository. If a key has already been committed, rotate it with the provider and remove it from the source code and Git history as appropriate.
 
-## 🧪 Testing and Calibration
+## Testing and Calibration(Modify the moisture threshold of the analog sensor by recalibration)
 
 - Measure sensor readings in dry and moist soil.
 - Calibrate the moisture thresholds using actual readings.
@@ -127,7 +115,7 @@ The website uses the OpenWeatherMap API to retrieve forecast data. Configure a v
 - Test the complete website-to-Arduino communication flow.
 - Check the system's behavior when weather data or serial communication is unavailable.
 
-## ⚠️ Limitations
+## Limitations
 
 - Sensor readings depend on soil type, sensor placement, and calibration.
 - Weather information depends on network connectivity and API availability.
@@ -135,7 +123,7 @@ The website uses the OpenWeatherMap API to retrieve forecast data. Configure a v
 - Reliable pump operation requires a suitable power supply and correct relay wiring.
 - This project is an educational prototype and requires further testing before practical agricultural deployment.
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Live moisture readings and pump status on the website.
 - Historical sensor data and irrigation logs.
@@ -145,11 +133,7 @@ The website uses the OpenWeatherMap API to retrieve forecast data. Configure a v
 - Improved weather-aware irrigation decisions.
 - Safer configuration and management of API credentials.
 
-## 🎓 Project Context
+## Project Context
 
 Developed as an academic project on **Rural Development Schemes**, exploring how basic automation, soil sensing, and weather information can help support more efficient water usage in irrigation.
-
-## 🙌 Acknowledgements
-
-This project involved learning, experimentation, AI-assisted development, hardware integration, and debugging to bring the website and Arduino prototype together.
 
